@@ -1,0 +1,47 @@
+.home{
+    background: #222222;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 24px 1px black;
+    color: white;
+    overflow: hidden;
+    padding: 2rem;
+}
+.home::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    animation: fade-out 2s 1 ease-out;
+}
+#blinker{
+    display: inline-boock;
+    width: 0px;
+    height: 5rem;
+    animation: blink 1s infinite ease-in-out;
+}
+#intro{
+    font-size: 5rem;
+    display: inline-block;
+    text-align: center
+}
+
+@keyframes blink {
+    0%{opacity: 1}
+    10%{opacity: 1}
+    40%{opacity: 0}
+    50%{opacity: 0}
+    60%{opacity: 0}
+    90%{opacity: 1}
+    100%{opacity: 1}
+}
+
+@keyframes fade-out{
+    0%{background: black}
+    30%{background: black}
+    100%{background: transparent;}
+}
