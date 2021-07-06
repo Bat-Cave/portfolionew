@@ -39,7 +39,7 @@ let Home = () => {
                     }, 1000)
                     setTimeout(() => {
                         moveLinks();
-                    }, 2000)
+                    }, 1000)
                 }
             }
         }
