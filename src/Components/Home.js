@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
 import '../styles/home.css';
+import {Link, withRouter} from 'react-router-dom';
+import useLocalStorage from "react-use-localstorage";
 
 let Home = () => {
-
     let [intro, setIntro] = useState('');
     let [showIntro, setShowIntro] = useState(true);
     let [showNav, setShowNav] = useState(false);
+    let [showFadeToBlack, setShowFadeToBlack] = useState(false);
+    let [destination, setDestination] = useState('Home');
+    let [introViewed, setIntroViewed] = useLocalStorage('introViewed', false);
     let introText = ["Hi.", "My name is Rico.", "Welcome to my website."];
     let currIntroText = 0;
     let introDelay = 3000;
@@ -26,11 +30,16 @@ let Home = () => {
                         typeIntro(introText[currIntroText]);
                     }, 1500);
                 } else {
-                    setShowIntro(false);
-                    setShowNav(true);
+                    setShowFadeToBlack(true);
+                    setIntroViewed(true);
+                    setTimeout(() => {
+                        setShowIntro(false);
+                        setShowNav(true);
+                        setShowFadeToBlack(false);
+                    }, 1000)
                     setTimeout(() => {
                         moveLinks();
-                    }, 100)
+                    }, 2000)
                 }
             }
         }
@@ -61,19 +70,44 @@ let Home = () => {
     let moveLinks = () => {
         let linkList = document.getElementById('links-layer-1');
         let incrementAngle = 30;
-        let radius = 140;
+        let radius = 150;
         for(let l = 0; l < linkList.children.length ; l++){
             let coords = [0, 0];
             let angle = 225 + (l * incrementAngle);
             coords[0] = radius*Math.sin(angle * (Math.PI / 180));
             coords[1] = radius*Math.cos(angle * (Math.PI / 180));
-            linkList.children[l].style.transform = `translate(calc(-50% - ${coords[1]}px), calc(-50% - ${coords[0]}px))`
-            console.log(`X: ${coords[0]}, Y: ${coords[1]}`);
+            linkList.children[l].style.transform = `translate(calc(-50% - ${coords[1]}px), calc(-50% - ${coords[0]}px))`;
+        }
+    }
+
+    let moveSubLinks = (action) => {
+        let linkList = document.getElementById('links-layer-2');
+        if(action === 'move'){
+            let radius = 90;
+            for(let l = 0; l < linkList.children.length ; l++){
+                let coords = [0, 0];
+                let angle = 245;
+                coords[0] = (radius + (50 * l)) * Math.sin(angle * (Math.PI / 180));
+                coords[1] = (radius + (23 * l)) * Math.cos(angle * (Math.PI / 180));
+                linkList.children[l].style.transform = `translate(calc(-50% - ${coords[1]}px), calc(-50% - ${coords[0]}px))`
+            }
+        } else {
+            for(let l = 0; l < linkList.children.length ; l++){
+                linkList.children[l].style.transform = `translate(0px, 0px)`;
+            }
         }
     }
 
     useEffect(() => {
-        if(showIntro){
+        if(introViewed){
+            setTimeout(() => {
+                setShowIntro(false);
+                setShowNav(true);
+                moveLinks();
+                setShowFadeToBlack(false);
+            }, 100)
+        }
+        if(showIntro && !introViewed){
             setTimeout(() => {
                 typeIntro(introText[0]);
             }, introDelay)
@@ -90,25 +124,38 @@ let Home = () => {
 
     return (
         <div className='home'>
+            {showFadeToBlack ? (
+                <div id='fadeToBlack'></div>
+            ) : null}
             {showIntro ? (
-                <code id='intro'>{intro}<span id='blinker'>|</span></code>
+                <code id='intro'>{intro}<span id='blinker'>|</span><button id='skip' onClick={() => {
+                    setShowIntro(false);
+                    setShowNav(true);
+                    setShowFadeToBlack(true);
+                    setIntroViewed(true);
+                    setTimeout(() => {
+                        moveLinks();
+                    }, 100)
+                }}>Skip</button></code>
             ) : null}
             {showNav ? (
                 <nav>
-                    <div className='profilePic'>Rico</div>
-                    <div className='links'>
+                    <h3 className='destination'>{destination}</h3>
+                    <div className='profilePic'></div>
+                    <div className='links' onMouseOut={() => setDestination('Home')}>
                         <ul id='links-layer-1'>
-                            <li>C</li>
-                            <li>S
-                                <ul className='links-layer-2'>
-                                    <li>li</li>
-                                    <li>fb</li>
-                                    <li>t</li>
-                                    <li>i</li>
+                            <li onMouseOver={() => setDestination('Contact')}><Link to='/contact'><i className="fas fa-envelope-open-text"></i></Link></li>
+                            <li className='hasSubLinks' onMouseOver={() => moveSubLinks('move')} onMouseOut={() => moveSubLinks()}>
+                                <Link to='/socials' onMouseOver={() => setDestination('Socials')}><i className="fas fa-user-circle"></i></Link>
+                                <ul id='links-layer-2'>
+                                    <li onMouseOver={() => setDestination('LinkedIn')}><a href='https://www.linkedin.com/in/richard-l-hancock' target='_blank' rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
+                                    <li onMouseOver={() => setDestination('Facebook')}><a href='https://www.facebook.com/richard.l.hancock' target='_blank' rel="noreferrer"><i className="fab fa-facebook"></i></a></li>
+                                    <li onMouseOver={() => setDestination('Twitch')}><a href='https://www.twitch.tv/monkeydrumma' target='_blank' rel="noreferrer"><i className="fab fa-twitch"></i></a></li>
+                                    <li onMouseOver={() => setDestination('Instagram')}><a href='https://www.instagram.com/uncle.ri.co/' target='_blank' rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
                                 </ul>
                             </li>
-                            <li>P</li>
-                            <li>A</li>
+                            <li onMouseOver={() => setDestination('Projects')}><Link to='/projects'><i className="fas fa-box-open"></i></Link></li>
+                            <li onMouseOver={() => setDestination('About')}><Link to='/about'><i className="fas fa-address-card"></i></Link></li>
                         </ul>
                     </div>
                 </nav>
@@ -117,4 +164,4 @@ let Home = () => {
     )
 }
 
-export default Home;
+export default withRouter(Home);
