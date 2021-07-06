@@ -54,6 +54,7 @@ let Home = () => {
         setTimeout(() => {
             typeIntro(introText[0]);
         }, introDelay)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
