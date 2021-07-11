@@ -80,6 +80,7 @@ nav{
     justify-content: center;
     align-items: center;
     background: transparent;
+    margin-bottom: 25%;
     /* background: radial-gradient(circle, var(--fourth-color) 0%, var(--fifth-color) 100%); */
 }
 nav::before{
@@ -114,7 +115,7 @@ ul li{
     display: flex;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translate(-50%, -50%);
     transform-origin: center;
     transition: all .5s ease;

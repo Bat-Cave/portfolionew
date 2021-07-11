@@ -8,7 +8,7 @@ import Socials from './Components/Socials';
 
 export default (
     <Switch>
-        <Route path='/' component={Home}/>
+        <Route exact path='/' component={Home}/>
         <Route path='/projects' component={Projects}/>
         <Route path='/about' component={About}/>
         <Route path='/contact' component={Contact}/>

@@ -135,6 +135,7 @@ let Home = () => {
                     setIntroViewed(true);
                     setTimeout(() => {
                         moveLinks();
+                        setShowFadeToBlack(false);
                     }, 100)
                 }}>Skip</button></code>
             ) : null}
