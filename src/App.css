@@ -3,14 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'ZCOOL KuaiLe', cursive;
 }
 body{
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 .container{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   font-family: 'ZCOOL KuaiLe', cursive;
+  overflow-x: hidden;
 }
