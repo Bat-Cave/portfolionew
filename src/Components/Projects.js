@@ -53,6 +53,16 @@ let Projects = () => {
                 <button name='Crandall' onClick={(e) => executeScroll('reciperequest')}><img src={crandall} alt='Crandall'/><span>Crandall</span></button>
                 <button name='Twitch' onClick={(e) => executeScroll('twitchbot')}><img src={twitch} alt='Twitch'/><span>Twitch</span></button>
             </div>
+            <Element className='project'>
+                <div className='project-container'>
+                    <div className='project-description'>
+                    <h3>You've found my projects</h3>
+                        <p>I've added a few of the projects I have done recently. Some of the projects you can play with on the page and others don't have much other than a description, mostly because they wouldn't work on their own.</p>
+                        <p>For the best experience, I suggest using a computer.</p>
+                        <p>You can quickly navigate with the navigation buttons on the left side (for desktop) or on top (for mobile)</p>
+                    </div>
+                </div>
+            </Element>
             <Element name='wizard' className='project'>
                 <div className='project-info'>
                     <h3>Troubleshooting Wizard</h3>
@@ -67,7 +77,7 @@ let Projects = () => {
                 <div className='project-container'>
                     <span onClick={(e) => {
                             e.preventDefault()
-                            toggleDetails(0)
+                            toggleDetails(1)
                             e.target.innerText === "Show Project" ? e.target.innerText = "Show Details" : e.target.innerText = "Show Project";
                         }}>Show Project</span>
                     <div className='project-description'>
@@ -106,7 +116,7 @@ let Projects = () => {
                     <div className='project-container'>
                         <span onClick={(e) => {
                                 e.preventDefault()
-                                toggleDetails(1)
+                                toggleDetails(2)
                                 e.target.innerText === "Show Project" ? e.target.innerText = "Show Details" : e.target.innerText = "Show Project";
                             }}>Show Project</span>
                         <div className='project-description'>
@@ -138,7 +148,7 @@ let Projects = () => {
                 <div className='project-container'>
                     <span onClick={(e) => {
                             e.preventDefault()
-                            toggleDetails(2)
+                            toggleDetails(3)
                             e.target.innerText === "Show Project" ? e.target.innerText = "Show Details" : e.target.innerText = "Show Project";
                         }}>Show Project</span>
                     <div className='project-description'>
@@ -174,7 +184,7 @@ let Projects = () => {
                 <div className='project-container'>
                     <span onClick={(e) => {
                             e.preventDefault()
-                            toggleDetails(3)
+                            toggleDetails(4)
                             e.target.innerText === "Show Project" ? e.target.innerText = "Show Details" : e.target.innerText = "Show Project";
                         }}>Show Project</span>
                     <div className='project-description'>
@@ -209,7 +219,7 @@ let Projects = () => {
                 <div className='project-container'>
                     <span onClick={(e) => {
                             e.preventDefault()
-                            toggleDetails(4)
+                            toggleDetails(5)
                             e.target.innerText === "Show Project" ? e.target.innerText = "Show Details" : e.target.innerText = "Show Project";
                         }}>Show Project</span>
                     <div className='project-description'>
@@ -245,7 +255,7 @@ let Projects = () => {
                 <div className='project-container'>
                     <span onClick={(e) => {
                             e.preventDefault()
-                            toggleDetails(5)
+                            toggleDetails(6)
                             e.target.innerText === "Show Project" ? e.target.innerText = "Show Details" : e.target.innerText = "Show Project";
                         }}>Show Project</span>
                     <div className='project-description'>
