@@ -31,7 +31,7 @@ let Contact = () => {
             setErrors(errors)
             return;
         } else {
-            emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER_ID)
+            emailjs.sendForm('service_jlnu76i', 'template_48gvodo', e.target, 'user_6RA5vbYbl9GFT2at7eAZz')
             .then((result) => {
                 setEmailSent(true);
                 console.log(result.text);
