@@ -99,6 +99,8 @@ nav::before{
     font-size: 3rem;
     font-family: 'ZCOOL KuaiLe', cursive;
     margin-bottom: 6px;
+    opacity: 1;
+    transition: all .25s ease;
 }
 
 ul{
@@ -135,6 +137,19 @@ ul li{
     transform-origin: center;
     transition: all .5s ease;
     color: var(--first-color);
+}
+#links-layer-1 > li:after{
+    content: attr(data-name);
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: auto;
+    height: 50px;
+    font-size: 12px;
+    opacity: 0;
+    transition: all .25s ease;
 }
 #links-layer-2{
     display: flex;
@@ -241,3 +256,12 @@ a{
     80%{opacity: 0;}
     100%{opacity: 1;}
 }
+
+@media only screen and (max-width: 500px) {
+    .destination{
+        opacity: 0;
+    }
+    #links-layer-1 > li:after{
+        opacity: 1;
+    }
+}   

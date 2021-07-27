@@ -145,8 +145,8 @@ let Home = () => {
                     <div className='profilePic'></div>
                     <div className='links' onMouseOut={() => setDestination('Home')}>
                         <ul id='links-layer-1'>
-                            <li onMouseOver={() => setDestination('Contact')}><Link to='/contact'><i className="fas fa-envelope-open-text"></i></Link></li>
-                            <li className='hasSubLinks' onMouseOver={() => moveSubLinks('move')} onMouseOut={() => moveSubLinks()}>
+                            <li data-name='Contact' onMouseOver={() => setDestination('Contact')}><Link to='/contact'><i className="fas fa-envelope-open-text"></i></Link></li>
+                            <li data-name='Socials' className='hasSubLinks' onMouseOver={() => moveSubLinks('move')} onMouseOut={() => moveSubLinks()}>
                                 <Link to='/socials' onMouseOver={() => setDestination('Socials')}><i className="fas fa-user-circle"></i></Link>
                                 <ul id='links-layer-2'>
                                     <li onMouseOver={() => setDestination('LinkedIn')}><a href='https://www.linkedin.com/in/richard-l-hancock' target='_blank' rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
@@ -155,8 +155,8 @@ let Home = () => {
                                     <li onMouseOver={() => setDestination('Instagram')}><a href='https://www.instagram.com/uncle.ri.co/' target='_blank' rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
                                 </ul>
                             </li>
-                            <li onMouseOver={() => setDestination('Projects')}><Link to='/projects'><i className="fas fa-box-open"></i></Link></li>
-                            <li onMouseOver={() => setDestination('About')}><Link to='/about'><i className="fas fa-address-card"></i></Link></li>
+                            <li data-name='Projects' onMouseOver={() => setDestination('Projects')}><Link to='/projects'><i className="fas fa-box-open"></i></Link></li>
+                            <li data-name='About' onMouseOver={() => setDestination('About')}><Link to='/about'><i className="fas fa-address-card"></i></Link></li>
                         </ul>
                     </div>
                 </nav>
