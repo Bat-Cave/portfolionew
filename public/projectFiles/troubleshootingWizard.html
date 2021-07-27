@@ -1,0 +1,1952 @@
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tamper</title>
+    <link href="troubleshootingWizard.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/abdb6402df.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145045342-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-145045342-1");
+    </script>
+  </head>
+  <body>
+    <div class="container1" id="section1">
+      <table>
+        <tr>
+          <td class="title" colspan="2">The tamper is on a...</td>
+        </tr>
+        <tr>
+          <th>Alder Simple</th>
+          <th>2GIG</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="#" onclick="adtshow()" class="a"
+              >Door/Window Sensor</a
+            >
+          </td>
+          <td>
+            <a href="#" onclick="tdtshow()" class="b"
+              >Door/Window Sensor</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#" onclick="amtshow()" class="b"
+              >Motion Detector</a
+            >
+          </td>
+          <td>
+            <a href="#" onclick="tlttshow()" class="a"
+              >Tilt Sensor</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <a href="#" onclick="tmtshow()" class="b"
+              >Motion Detector</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <a href="#" onclick="imgtshow()" class="a"
+              >Image Sensor</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <a href="#" onclick="stshow()" class="b"
+              >Smoke Detector</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <a href="#" onclick="gtshow()" class="a"
+              >Glass Break Detector</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="adt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close1">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4 style="width: 100%">Alder Simple Door/Window Sensor</h4>
+          <h4>Checklist</h4>
+          <p
+            id="adl"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="adcheck()"
+                type="checkbox"
+                id="atd1" />
+              <span class="slider round"></span></label
+            ><span id="aq1" class="question" style="color: black"
+              >Have you located the sensor?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="adcheck()"
+                type="checkbox"
+                id="atd2" />
+              <span class="slider round"></span></label
+            ><span id="aq2" class="question" style="color: black"
+              >Have you removed the cover from the larger sensor piece?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="adcheck()"
+                type="checkbox"
+                id="atd3" />
+              <span class="slider round"></span></label
+            ><span id="aq3" class="question"
+              >Have you put the sensor back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="ads1">
+              There are 2 parts to the door sensor. The larger part contains the
+              circuit board and tamper switch.
+            </li>
+            <li id="ads2">
+              <a class="sensortool" href="#"
+                >Remove<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/DW-AS.png"
+              /></a>
+              the sensor from the mount.
+              <ul>
+                <li>
+                  Look for the three white lines on the top or the bottom of the
+                  sensor.
+                </li>
+                <li>
+                  There will be a small gap between the sensor and the mount on
+                  the side with the lines.
+                </li>
+                <li>
+                  Place your finger in the gap and push out to unclip the sensor
+                  for the mount.
+                </li>
+                <li>
+                  Use a butter knife, flathead screwdriver, or a key if you
+                  can't get it with your finger.
+                </li>
+              </ul>
+            </li>
+            <li id="ads3">Clip sensor back onto the mount.</li>
+            <li id="ads4" style="display: none">
+              All troubleshooting complete. If the sensor is still reading
+              Tamper, replace the sensor.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="tdt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close2">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>2GIG Door/Window Sensor</h4>
+          <h4>Checklist</h4>
+          <p
+            id="adl"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tdcheck()"
+                type="checkbox"
+                id="ttd1" />
+              <span class="slider round"></span></label
+            ><span id="tq1" class="question" style="color: black"
+              >Have you located the sensor?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tdcheck()"
+                type="checkbox"
+                id="ttd2" />
+              <span class="slider round"></span></label
+            ><span id="tq2" class="question" style="color: black"
+              >Have you removed the cover from the larger sensor piece?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tdcheck()"
+                type="checkbox"
+                id="ttd3" />
+              <span class="slider round"></span></label
+            ><span id="tq3" class="question"
+              >Have you put the sensor back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar2"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="tds1">
+              There are 2 parts to the door sensor. The larger part contains the
+              circuit board and tamper switch.
+            </li>
+            <li id="tds2">
+              Press the
+              <a class="sensortool" href="#"
+                >release button<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/DW-2GIG.png"
+              /></a>
+              and remove the sensor from the mount.
+              <ul>
+                <li>This may be difficult for some customers.</li>
+                <li>
+                  Press the button with small flathead screwdriver if difficult.
+                </li>
+              </ul>
+            </li>
+            <li id="tds3">Clip sensor back onto the mount.</li>
+            <li id="tds4" style="display: none">
+              All troubleshooting complete. If the sensor is still reading
+              Tamper, replace the sensor.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="amt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close3">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>Alder Simple Motion Detector</h4>
+          <h4>Checklist</h4>
+          <p
+            id="amt"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="amcheck()"
+                type="checkbox"
+                id="am1" />
+              <span class="slider round"></span></label
+            ><span id="amq1" class="question" style="color: black"
+              >Have you located the detector?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="amcheck()"
+                type="checkbox"
+                id="am2" />
+              <span class="slider round"></span></label
+            ><span id="amq2" class="question" style="color: black"
+              >Have you removed the detector from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="amcheck()"
+                type="checkbox"
+                id="am3" />
+              <span class="slider round"></span></label
+            ><span id="amq3" class="question"
+              >Have you put the detector back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar3"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="ams1">
+              Locate the motion detector. Motion detectors are usually mounted
+              6-7 feet high on a wall.
+            </li>
+            <li id="ams2">
+              Unclip the detector from the mount.
+              <ul>
+                <li>
+                  Press the
+                  <a class="sensortool" href="#"
+                    >black tamper switch<img
+                      src="http://learn.alder.com/wp-content/uploads/2019/04/MOTION-ASInside.png"
+                  /></a>
+                  above the battery.
+                </li>
+              </ul>
+            </li>
+            <li id="ams3">Clip the detector back onto the mount.</li>
+            <li id="ams4" style="display: none">
+              All troubleshooting complete. If the detector is still reading
+              Tamper, replace the detector.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="tltt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close4">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>2GIG Tilt Sensor</h4>
+          <h4>Checklist</h4>
+          <p
+            id="tltt"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tltcheck()"
+                type="checkbox"
+                id="tlt1" />
+              <span class="slider round"></span></label
+            ><span id="tltq1" class="question" style="color: black"
+              >Have you located the sensor?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tltcheck()"
+                type="checkbox"
+                id="tlt2" />
+              <span class="slider round"></span></label
+            ><span id="tltq2" class="question" style="color: black"
+              >Have you removed the sensor from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tltcheck()"
+                type="checkbox"
+                id="tlt3" />
+              <span class="slider round"></span></label
+            ><span id="tltq3" class="question"
+              >Have you put the sensor back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar4"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="tlts1">
+              Locate the sensor. Tilt sensors are located towards the top of the
+              garage door.
+            </li>
+            <li id="tlts2">
+              Remove the sensor from the mount.
+              <ul>
+                <li>
+                  Press a flathead screwdriver into the slot on the sides of the
+                  sensor and
+                  <a class="sensortool" href="#"
+                    >turn the screwdriver<img
+                      src="http://learn.alder.com/wp-content/uploads/2019/04/TILT-Open.png"
+                  /></a>
+                  to lift the cover up and off the mount.
+                </li>
+              </ul>
+            </li>
+            <li id="tlts3">Clip the sensor back onto the mount.</li>
+            <li id="tlts4" style="display: none">
+              All troubleshooting complete. If the sensor is still reading
+              Tamper, replace the sensor.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="tmt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close5">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>2GIG Motion Detector</h4>
+          <h4>Checklist</h4>
+          <p
+            id="tmt"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tmcheck()"
+                type="checkbox"
+                id="tm1" />
+              <span class="slider round"></span></label
+            ><span id="tmq1" class="question" style="color: black"
+              >Have you located the detector?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tmcheck()"
+                type="checkbox"
+                id="tm2" />
+              <span class="slider round"></span></label
+            ><span id="tmq2" class="question" style="color: black"
+              >Have you removed the detector from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="tmcheck()"
+                type="checkbox"
+                id="tm3" />
+              <span class="slider round"></span></label
+            ><span id="tmq3" class="question"
+              >Have you put the detector back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar5"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="tms1">
+              Locate the motion detector. Motion detectors are usually mounted
+              6-7 feet high on a wall.
+            </li>
+            <li id="tms2">
+              <a class="sensortool" href="#"
+                >Remove the Phillips<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/MOTION-2GIGSide.png"
+              /></a>
+              screw holding the detector to the mount. Unclip the detector.
+            </li>
+            <li id="tms3">Clip the detector back onto the mount.</li>
+            <li id="tms4" style="display: none">
+              All troubleshooting complete. If the detector is still reading
+              Tamper, replace the detector.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="imgt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close6">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>2GIG Image Sensor</h4>
+          <h4>Checklist</h4>
+          <p
+            id="imgt"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="imgcheck()"
+                type="checkbox"
+                id="img1" />
+              <span class="slider round"></span></label
+            ><span id="imgq1" class="question" style="color: black"
+              >Have you located the detector?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="imgcheck()"
+                type="checkbox"
+                id="img2" />
+              <span class="slider round"></span></label
+            ><span id="imgq2" class="question" style="color: black"
+              >Have you removed the detector from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="imgcheck()"
+                type="checkbox"
+                id="img3" />
+              <span class="slider round"></span></label
+            ><span id="imgq3" class="question"
+              >Have you put the detector back on the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="imgcheck()"
+                type="checkbox"
+                id="img4" />
+              <span class="slider round"></span></label
+            ><span id="imgq4" class="question"
+              >Have you waited 5 minutes for the tamper to clear?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar6"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="imgs1">
+              Locate the image sensor. Image sensors are usually mounted 6-7
+              feet high on a wall.
+            </li>
+            <li id="imgs2">
+              <a class="sensortool" href="#"
+                >Slide the sensor up<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/IMG-Tamper.png"
+                  width="400px"
+              /></a>
+              towards the ceiling.
+            </li>
+            <li id="imgs3">Slide the sensor back down onto the mount.</li>
+            <li id="imgs4">
+              A built-in accelerometer detects movement or re-positioning of the
+              Image Sensor. Image Sensors will tamper whenever a change in
+              sensor orientation is detected. 5 minutes of no movement will
+              clear the tamper.
+            </li>
+            <li id="imgs5" style="display: none">
+              All troubleshooting complete. If the sensor is still reading
+              Tamper, replace the sensor.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="st" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close7">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>2GIG Smoke Detector</h4>
+          <h4>Checklist</h4>
+          <p
+            id="st"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="scheck()"
+                type="checkbox"
+                id="s1" />
+              <span class="slider round"></span></label
+            ><span id="sq1" class="question" style="color: black"
+              >Have you located the detector?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="scheck()"
+                type="checkbox"
+                id="s2" />
+              <span class="slider round"></span></label
+            ><span id="sq2" class="question" style="color: black"
+              >Have you removed the detector from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="scheck()"
+                type="checkbox"
+                id="s3" />
+              <span class="slider round"></span></label
+            ><span id="sq3" class="question"
+              >Have you put the detector back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar7"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="ss1">
+              Locate the smoke detector. Common locations include: hallway,
+              living room, bedroom.
+            </li>
+            <li id="ss2">
+              <a class="sensortool" href="#"
+                >Turn the detector to the left<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/SMOKE-2GIGTamper.png"
+              /></a>
+              (counter-clockwise) and it should come off the base.
+              <ul>
+                <li>The detector will only twist about a ½ an inch.</li>
+                <li>
+                  If the detector is too tight to twist by hand, put a butter
+                  knife or pen
+                  <a class="sensortool" href="#"
+                    >through the slots<img
+                      src="http://learn.alder.com/wp-content/uploads/2019/04/SMOKE-2GIGSlots.png"
+                  /></a>
+                  on the bottom of the smoke and use that as leverage to twist
+                  it.
+                </li>
+              </ul>
+            </li>
+            <li id="ss3">
+              Place the detector back on the mount and turn clockwise to secure
+              it again. Once fully mounted,
+              <a class="sensortool" href="#"
+                ><img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/SMOKE-2GIGAlignment.png"
+                />the triangle on the base should align with the triangle on the
+                detector</a
+              >.
+            </li>
+            <li id="ss4" style="display: none">
+              All troubleshooting complete. If the detector is still reading
+              Tamper, replace the detector.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="ct" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close8">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>Carbon Monoxide Detector</h4>
+          <h4>Checklist</h4>
+          <p
+            id="ct"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="ccheck()"
+                type="checkbox"
+                id="c1" />
+              <span class="slider round"></span></label
+            ><span id="cq1" class="question" style="color: black"
+              >Have you located the detector?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="ccheck()"
+                type="checkbox"
+                id="c2" />
+              <span class="slider round"></span></label
+            ><span id="cq2" class="question" style="color: black"
+              >Have you removed the detector from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="ccheck()"
+                type="checkbox"
+                id="c3" />
+              <span class="slider round"></span></label
+            ><span id="cq3" class="question"
+              >Have you put the detector back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar8"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="cs1">
+              Locate the detector. Common locations include: hallway, living
+              room, bedroom.
+            </li>
+            <li id="cs2">
+              <a class="sensortool" href="#"
+                >Turn the detector to the left<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/CO-2GIGTamper.png"
+              /></a>
+              (counter-clockwise) and it should come off the base.
+              <ul>
+                <li>The detector will only twist about a ½ an inch.</li>
+              </ul>
+            </li>
+            <li id="cs3">
+              Place the detector back on the mount and turn clockwise to secure
+              it again.
+            </li>
+            <li id="cs4" style="display: none">
+              All troubleshooting complete. If the detector is still reading
+              Tamper, replace the detector.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="fft" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close9">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>Fire Fighter</h4>
+          <h4>Checklist</h4>
+          <p
+            id="fft"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="ffcheck()"
+                type="checkbox"
+                id="ff1" />
+              <span class="slider round"></span></label
+            ><span id="ffq1" class="question" style="color: black"
+              >Have you located the sensor?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="ffcheck()"
+                type="checkbox"
+                id="ff2" />
+              <span class="slider round"></span></label
+            ><span id="ffq2" class="question" style="color: black"
+              >Have you removed the sensor from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="ffcheck()"
+                type="checkbox"
+                id="ff3" />
+              <span class="slider round"></span></label
+            ><span id="ffq3" class="question"
+              >Have you put the sensor back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar9"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="ffs1">
+              Fire fighters are located within inches of the smoke detector.
+            </li>
+            <li id="ffs2">
+              <a class="sensortool" href="#"
+                >Press the release button<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/FF-Open.png"
+              /></a>
+              on the top of the sensor and remove the front cover.
+            </li>
+            <li id="ffs3">
+              Reattach cover to mounting plate and make sure it is tight.
+            </li>
+            <li id="ffs4" style="display: none">
+              All troubleshooting complete. If the sensor is still reading
+              Tamper, replace the sensor.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="gt" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="close" class="close10">&times;</span>
+        </div>
+        <div
+          style="
+            max-width: 550px;
+            width: auto;
+            font-size: 15px;
+            display: block;
+            float: left;
+            margin: 2px 6px;
+            color: black;
+          "
+        >
+          <h4>Fire Fighter</h4>
+          <h4>Checklist</h4>
+          <p
+            id="gt"
+            style="
+              display: block;
+              padding: 16px;
+              width: auto;
+              height: auto;
+              text-align: left;
+            "
+          >
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="gcheck()"
+                type="checkbox"
+                id="g1" />
+              <span class="slider round"></span></label
+            ><span id="gq1" class="question" style="color: black"
+              >Have you located the sensor?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="gcheck()"
+                type="checkbox"
+                id="g2" />
+              <span class="slider round"></span></label
+            ><span id="gq2" class="question" style="color: black"
+              >Have you removed the sensor from the mount?</span
+            ><br />
+            <label class="switch">
+              <input
+                class="checkthis"
+                onclick="gcheck()"
+                type="checkbox"
+                id="g3" />
+              <span class="slider round"></span></label
+            ><span id="gq3" class="question"
+              >Have you put the sensor back on the mount?</span
+            ><br />
+          </p>
+
+          <h4>Troubleshooting Progress</h4>
+          <div id="progressbar">
+            <div
+              id="bar10"
+              style="font-size: 12px; padding: 3px 4px 0 0; text-align: right"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <h4 style="color: black">Troubleshooting</h4>
+          <ul id="dlist" class="textsolution">
+            <li id="gs1">
+              Glass Break detectors typically mounted on the wall near windows.
+              If the detector is not on the wall, check to see if it fell off.
+              If the detector is lost, the customer will need to pay for a new
+              one.
+            </li>
+            <li id="gs2">
+              <a class="sensortool" href="#"
+                >Turn the detector to the left<img
+                  src="http://learn.alder.com/wp-content/uploads/2019/04/GB-Tamper.png"
+              /></a>
+              (counter-clockwise) and it should come off the base.
+            </li>
+            <li id="gs3">
+              Place the detector back on the mount and turn clockwise to secure
+              it again.
+            </li>
+            <li id="gs4" style="display: none">
+              All troubleshooting complete. If the detector is still reading
+              Tamper, replace the detector.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function adtshow() {
+        open1();
+      }
+
+      var modal = document.getElementById("adt");
+      var span = document.getElementsByClassName("close1")[0];
+      function open1() {
+        console.log("Opened");
+        modal.style.display = "block";
+      }
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      function tdtshow() {
+        open2();
+      }
+
+      var modal2 = document.getElementById("tdt");
+      var span2 = document.getElementsByClassName("close2")[0];
+      function open2() {
+        console.log("Opened");
+        modal2.style.display = "block";
+      }
+      span2.onclick = function () {
+        modal2.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      };
+
+      function amtshow() {
+        open3();
+      }
+
+      var modal3 = document.getElementById("amt");
+      var span3 = document.getElementsByClassName("close3")[0];
+      function open3() {
+        console.log("Opened");
+        modal3.style.display = "block";
+      }
+      span3.onclick = function () {
+        modal3.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal3) {
+          modal3.style.display = "none";
+        }
+      };
+
+      function tlttshow() {
+        open4();
+      }
+
+      var modal4 = document.getElementById("tltt");
+      var span4 = document.getElementsByClassName("close4")[0];
+      function open4() {
+        console.log("Opened");
+        modal4.style.display = "block";
+      }
+      span4.onclick = function () {
+        modal4.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal4) {
+          modal4.style.display = "none";
+        }
+      };
+
+      function tmtshow() {
+        open5();
+      }
+
+      var modal5 = document.getElementById("tmt");
+      var span5 = document.getElementsByClassName("close5")[0];
+      function open5() {
+        console.log("Opened");
+        modal5.style.display = "block";
+      }
+      span5.onclick = function () {
+        modal5.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal5) {
+          modal5.style.display = "none";
+        }
+      };
+      function imgtshow() {
+        open6();
+      }
+
+      var modal6 = document.getElementById("imgt");
+      var span6 = document.getElementsByClassName("close6")[0];
+      function open6() {
+        console.log("Opened");
+        modal6.style.display = "block";
+      }
+      span6.onclick = function () {
+        modal6.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal6) {
+          modal6.style.display = "none";
+        }
+      };
+      function stshow() {
+        open7();
+      }
+
+      var modal7 = document.getElementById("st");
+      var span7 = document.getElementsByClassName("close7")[0];
+      function open7() {
+        console.log("Opened");
+        modal7.style.display = "block";
+      }
+      span7.onclick = function () {
+        modal7.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal7) {
+          modal7.style.display = "none";
+        }
+      };
+
+      function ctshow() {
+        open8();
+      }
+
+      var modal8 = document.getElementById("ct");
+      var span8 = document.getElementsByClassName("close8")[0];
+      function open8() {
+        console.log("Opened");
+        modal8.style.display = "block";
+      }
+      span8.onclick = function () {
+        modal8.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal8) {
+          modal8.style.display = "none";
+        }
+      };
+      function fftshow() {
+        open9();
+      }
+
+      var modal9 = document.getElementById("fft");
+      var span9 = document.getElementsByClassName("close9")[0];
+      function open9() {
+        console.log("Opened");
+        modal9.style.display = "block";
+      }
+      span9.onclick = function () {
+        modal9.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal9) {
+          modal9.style.display = "none";
+        }
+      };
+      function gtshow() {
+        open10();
+      }
+
+      var modal10 = document.getElementById("gt");
+      var span10 = document.getElementsByClassName("close10")[0];
+      function open10() {
+        console.log("Opened");
+        modal10.style.display = "block";
+      }
+      span10.onclick = function () {
+        modal10.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal10) {
+          modal10.style.display = "none";
+        }
+      };
+
+      function adcheck() {
+        var check1 = document.getElementById("atd1");
+        var check2 = document.getElementById("atd2");
+        var check3 = document.getElementById("atd3");
+        var sol1 = document.getElementById("ads1");
+        var sol2 = document.getElementById("ads2");
+        var sol3 = document.getElementById("ads3");
+        var sol4 = document.getElementById("ads4");
+        var q1 = document.getElementById("aq1");
+        var q2 = document.getElementById("aq2");
+        var q3 = document.getElementById("aq3");
+        var w = 5;
+        var bar = document.getElementById("bar");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.666666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function tdcheck() {
+        var check1 = document.getElementById("ttd1");
+        var check2 = document.getElementById("ttd2");
+        var check3 = document.getElementById("ttd3");
+        var sol1 = document.getElementById("tds1");
+        var sol2 = document.getElementById("tds2");
+        var sol3 = document.getElementById("tds3");
+        var sol4 = document.getElementById("tds4");
+        var q1 = document.getElementById("tq1");
+        var q2 = document.getElementById("tq2");
+        var q3 = document.getElementById("tq3");
+        var w = 5;
+        var bar = document.getElementById("bar2");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.666666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function amcheck() {
+        var check1 = document.getElementById("am1");
+        var check2 = document.getElementById("am2");
+        var check3 = document.getElementById("am3");
+        var sol1 = document.getElementById("ams1");
+        var sol2 = document.getElementById("ams2");
+        var sol3 = document.getElementById("ams3");
+        var sol4 = document.getElementById("ams4");
+        var q1 = document.getElementById("amq1");
+        var q2 = document.getElementById("amq2");
+        var q3 = document.getElementById("amq3");
+        var w = 5;
+        var bar = document.getElementById("bar3");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.666666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function tltcheck() {
+        var check1 = document.getElementById("tlt1");
+        var check2 = document.getElementById("tlt2");
+        var check3 = document.getElementById("tlt3");
+        var sol1 = document.getElementById("tlts1");
+        var sol2 = document.getElementById("tlts2");
+        var sol3 = document.getElementById("tlts3");
+        var sol4 = document.getElementById("tlts4");
+        var q1 = document.getElementById("tltq1");
+        var q2 = document.getElementById("tltq2");
+        var q3 = document.getElementById("tltq3");
+        var w = 5;
+        var bar = document.getElementById("bar4");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.666666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function tmcheck() {
+        var check1 = document.getElementById("tm1");
+        var check2 = document.getElementById("tm2");
+        var check3 = document.getElementById("tm3");
+        var sol1 = document.getElementById("tms1");
+        var sol2 = document.getElementById("tms2");
+        var sol3 = document.getElementById("tms3");
+        var sol4 = document.getElementById("tms4");
+        var q1 = document.getElementById("tmq1");
+        var q2 = document.getElementById("tmq2");
+        var q3 = document.getElementById("tmq3");
+        var w = 5;
+        var bar = document.getElementById("bar5");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.666666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function imgcheck() {
+        var check1 = document.getElementById("img1");
+        var check2 = document.getElementById("img2");
+        var check3 = document.getElementById("img3");
+        var check4 = document.getElementById("img4");
+        var sol1 = document.getElementById("imgs1");
+        var sol2 = document.getElementById("imgs2");
+        var sol3 = document.getElementById("imgs3");
+        var sol4 = document.getElementById("imgs4");
+        var sol5 = document.getElementById("imgs5");
+        var q1 = document.getElementById("imgq1");
+        var q2 = document.getElementById("imgq2");
+        var q3 = document.getElementById("imgq3");
+        var q4 = document.getElementById("imgq4");
+        var w = 5;
+        var bar = document.getElementById("bar6");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 23.75;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 23.75;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 23.75;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (check4.checked == true) {
+          sol4.style.display = "none";
+          q4.style.color = "rgba(0,0,0,0.4)";
+          w += 23.75;
+        } else {
+          sol4.style.display = "list-item";
+          q4.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true &&
+          check4.checked == true
+        ) {
+          sol5.style.display = "list-item";
+        } else {
+          sol5.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false &&
+          check4.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function scheck() {
+        var check1 = document.getElementById("s1");
+        var check2 = document.getElementById("s2");
+        var check3 = document.getElementById("s3");
+        var sol1 = document.getElementById("ss1");
+        var sol2 = document.getElementById("ss2");
+        var sol3 = document.getElementById("ss3");
+        var sol4 = document.getElementById("ss4");
+        var q1 = document.getElementById("sq1");
+        var q2 = document.getElementById("sq2");
+        var q3 = document.getElementById("sq3");
+        var w = 5;
+        var bar = document.getElementById("bar7");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function ccheck() {
+        var check1 = document.getElementById("c1");
+        var check2 = document.getElementById("c2");
+        var check3 = document.getElementById("c3");
+        var sol1 = document.getElementById("cs1");
+        var sol2 = document.getElementById("cs2");
+        var sol3 = document.getElementById("cs3");
+        var sol4 = document.getElementById("cs4");
+        var q1 = document.getElementById("cq1");
+        var q2 = document.getElementById("cq2");
+        var q3 = document.getElementById("cq3");
+        var w = 5;
+        var bar = document.getElementById("bar8");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function ffcheck() {
+        var check1 = document.getElementById("ff1");
+        var check2 = document.getElementById("ff2");
+        var check3 = document.getElementById("ff3");
+        var sol1 = document.getElementById("ffs1");
+        var sol2 = document.getElementById("ffs2");
+        var sol3 = document.getElementById("ffs3");
+        var sol4 = document.getElementById("ffs4");
+        var q1 = document.getElementById("ffq1");
+        var q2 = document.getElementById("ffq2");
+        var q3 = document.getElementById("ffq3");
+        var w = 5;
+        var bar = document.getElementById("bar9");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+      function gcheck() {
+        var check1 = document.getElementById("g1");
+        var check2 = document.getElementById("g2");
+        var check3 = document.getElementById("g3");
+        var sol1 = document.getElementById("gs1");
+        var sol2 = document.getElementById("gs2");
+        var sol3 = document.getElementById("gs3");
+        var sol4 = document.getElementById("gs4");
+        var q1 = document.getElementById("gq1");
+        var q2 = document.getElementById("gq2");
+        var q3 = document.getElementById("gq3");
+        var w = 5;
+        var bar = document.getElementById("bar10");
+
+        if (check1.checked == true) {
+          sol1.style.display = "none";
+          q1.style.color = "rgba(0,0,0,0.4)";
+          w += 31.66666667;
+        } else {
+          sol1.style.display = "list-item";
+          q1.style.color = "black";
+          w -= w / 5;
+        }
+        if (check2.checked == true) {
+          sol2.style.display = "none";
+          q2.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol2.style.display = "list-item";
+          q2.style.color = "black";
+          w -= w / 5;
+        }
+        if (check3.checked == true) {
+          sol3.style.display = "none";
+          q3.style.color = "rgba(0,0,0,0.4)";
+          w += 31.6666666;
+        } else {
+          sol3.style.display = "list-item";
+          q3.style.color = "black";
+          w -= w / 5;
+        }
+        if (
+          check1.checked == true &&
+          check2.checked == true &&
+          check3.checked == true
+        ) {
+          sol4.style.display = "list-item";
+        } else {
+          sol4.style.display = "none";
+        }
+        if (
+          check1.checked == false &&
+          check2.checked == false &&
+          check3.checked == false
+        ) {
+          w = 0;
+        }
+        if (w < 0) {
+          w = 0;
+        }
+        bar.innerHTML = Math.ceil(w) + "%";
+        bar.style.width = w + "%";
+      }
+    </script>
+  </body>
