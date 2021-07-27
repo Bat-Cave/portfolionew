@@ -79,6 +79,36 @@
     padding: 0 128px;
 }
 
+.project span{
+    padding: 4px 8px;
+    border-radius: 15px;
+    background: white;
+    color: black;
+    margin: 4px;
+}
+
+.project div{
+    margin: 8px 0;
+    min-height: 20px;
+}
+
+.project a{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: underline;
+    background: transparent;
+    color: var(--first-color);
+    margin: 8px 0;
+}
+
+.project *{
+    margin: 8px 0;
+}
+
 .scroll-to-container{
     position: fixed;
     left: 20px;

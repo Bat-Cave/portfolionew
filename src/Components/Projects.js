@@ -31,49 +31,89 @@ let Projects = () => {
                 <button name='Twitch' onClick={(e) => executeScroll('twitchbot')}><img src={twitch} alt='Twitch'/><span>Twitch</span></button>
             </div>
             <Element name='wizard' className='project'>
-                <h3>Title</h3>
-                <p>Technologies Used</p>
-                <p>Link or "Not Hosted"</p>
+                <h3>Troubleshooting Wizard</h3>
+                <div>
+                    <p>Technologies Used:</p> 
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                </div>
+                <p>Privately Hosted on Company Site</p>
                 <div className='project-container'>
                     
                 </div>
             </Element>
             <Element name='devmountain' className='project'>
-                <h3>Title</h3>
-                <p>Technologies Used</p>
-                <p>Link or "Not Hosted"</p>
+                <h3>Nutrification</h3>
+                <div>
+                    <p>Technologies Used:</p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                    <span>React</span>
+                    <span>Redux</span>
+                    <span>Node.js</span>
+                </div>
+                <p>Not Hosted</p>
                 <div className='project-container'>
                     
                 </div>
             </Element>
             <Element name='omadi' className='project'>
-                <h3>Title</h3>
-                <p>Technologies Used</p>
+                <h3>Omadi Agent Extension</h3>
+                <div>
+                    <p>Technologies Used:</p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                </div>
                 <p>Link or "Not Hosted"</p>
                 <div className='project-container'>
                     
                 </div>
             </Element>
             <Element name='ezworkpc' className='project'>
-                <h3>Title</h3>
-                <p>Technologies Used</p>
-                <p>Link or "Not Hosted"</p>
+                <h3>ezworkpc</h3>
+                <div>
+                    <p>Technologies Used:</p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                    <span>React</span>
+                    <span>Redux</span>
+                    <span>Node.js</span>
+                </div>
+                <p><a href='https://www.ezworkpc.com/home' target='_blank' rel='noreferrer'>ezworkpc.com</a></p>
                 <div className='project-container'>
                     
                 </div>
             </Element>
             <Element name='reciperequest' className='project'>
-                <h3>Title</h3>
-                <p>Technologies Used</p>
-                <p>Link or "Not Hosted"</p>
+                <h3>Recipe Request System</h3>
+                <div>
+                    <p>Technologies Used:</p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                    <span>JQuery</span>
+                    <span>PHP</span>
+                </div>
+                <p>Privately Hosted on Company Site</p>
                 <div className='project-container'>
                     
                 </div>
             </Element>
             <Element name='twitchbot' className='project'>
-                <h3>Title</h3>
-                <p>Technologies Used</p>
-                <p>Link or "Not Hosted"</p>
+                <h3>Twitch Bot & monkeydrumma.com</h3>
+                <div>
+                    <p>Technologies Used:</p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                </div>
+                <p><a href='https://www.monkeydrumma.com/' target='_blank' rel='noreferrer'>monkeydrumma.com</a></p>
                 <div className='project-container'>
                     
                 </div>
