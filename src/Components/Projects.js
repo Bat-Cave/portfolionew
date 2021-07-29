@@ -124,7 +124,7 @@ let Projects = () => {
                         <div className='project-description'>
                             <h3>Nutrification</h3>
                             <p>Nutrification was my final project for graduation at DevMountain. DevMountain was a 13-week coding bootcamp where we learned React, Node, PostgreSQL, and more. I was in a cohort of about 25 other students. At the end of our time at DevMountain we presented our final projects and then our instructors would award projects that were the most technical, had the best UI, best overall, and more. My project won best overall in my cohort.</p>
-                            <p>Nutrification was a program that would take your weight, height, activity level, age, and gender to calculate your recommended daily intake for calories, protein, carbs, fat, and water. Unfortunately, Nutrification is no longer hosted.</p>
+                            <p>Nutrification was a program that would take your weight, height, activity level, age, and gender to calculate your recommended daily intake for calories, protein, carbs, fat, and water. You could search for food you had eaten and add it to a "meal". After adding all of the food you ate for a meal, it would calculate the macro and micro nutrients you ate. It kept a history of the food you ate and the nutrients you took in. Unfortunately, Nutrification is no longer hosted.</p>
                         </div>
                         <Iframe src="https://www.ricohancock.com/projectFiles/nutrificationLogo.html"
                             width="100%"
@@ -158,7 +158,7 @@ let Projects = () => {
                         <h3>Omadi Agent Extension (OAE)</h3>
                         <p>Towards the end of my time at DevMountain, Covid-19 started to spread rapidly and finding a job was tough. I eventually settled for a training/tech support job for Omadi, a web-based towing sowftware company headquartered in Lehi, UT. I worked at Omadi for about a year when half of the company was laid off due to Covid. I was among those laid off.</p>
                         <p>While at Omadi, I noticed there were some tasks that were repettative and time consuming, like restoring thousands of tow records, enabling/disabling features, and more. I decided to make a browser extension to handle some of those tasks. My extension cut down tasks that would take a couple weeks to about an hour.</p>
-                        <p>There isn't much that you can see OAE do without the right circumstances, but you can see how the UI looked. It followed a similar style to other elements on Omadi's website. Hovering over the tool would reveal menu options you would select to perform certain functions.</p>
+                        <p>There isn't much that you can see OAE do without the right circumstances, but you can see how the UI looked. It followed a similar style to other elements on Omadi's website. Hovering over the tool would reveal menu options you could select to perform certain functions.</p>
                     </div>
                     <Iframe src="https://www.ricohancock.com/projectFiles/popup.html"
                         width="100%"
@@ -266,10 +266,10 @@ let Projects = () => {
                         }}>Show Project</span>
                     <div className='project-description'>
                         <h3>Twitch Streaming</h3>
-                        <p>I started streaming on Twitch on June 9th, 2020. At the time, I was playing a lot of Modern Warfare 3 and being accused of hacking. I decided to start streaming to show the "hackusators" that I was not hacking. But instead of them watching me, I ended up loving streaming.</p>
-                        <p>One of the unique things about streaming is that the software you use to set up your stream suppors browser sources. I instantly began making overlays, animations, and call to actions to show on stream. I also created a twitch chat bot that has a whole lot of commands.</p>
+                        <p>I started streaming on Twitch on June 9th, 2020. At the time, I was playing a lot of Modern Warfare 3 and decided to stream my gameplay. Several of the common players began accusing me of hacking. I decided to start streaming to show the "hackusators" that I was not hacking. But instead of them watching me, they kept accusing me, and I ended up loving streaming.</p>
+                        <p>The streaming software used to broadcast your stream allows you to capture displays, audio devices, and images as sources for viewers to see. It also supported adding browser sources to the screen. I instantly began usning my web dev skills to make overlays, animations, and call to actions to show on stream, purely with HTML, CSS, and JavaScript. I also created a Twitch chat bot with Nodejs that has a whole lot of commands to make the experience more interactive for viewers.</p>
                         <p>I created a website that shows items my viewers could buy with gems they earn from watching my stream.</p>
-                        <p>I recently surpassed 100 followers on Twitch, and to celebrate, I created a boss battle for my viewers to play. Viewers would have to type commands in order in my chat to defeat the boss. Chat messages were read by my bot and if the message included the correct commands, a bomb barrel would be thrown at the boss. Everything was made with HTML, CSS, and JavaScript.</p>
+                        <p>I recently surpassed 100 followers on Twitch, and to celebrate, I created a boss battle for my viewers to play. Viewers would have to type commands in the correct order in the chat to throw barrel bombs to defeat the boss. Chat messages were read by my bot and if the message included the correct commands, a bomb barrel would be thrown at the boss.</p>
                     </div>
                     <Iframe src="https://www.monkeydrumma.com/shop"
                         width="100%"
