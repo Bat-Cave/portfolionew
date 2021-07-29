@@ -56,10 +56,10 @@ let Projects = () => {
             <Element className='project'>
                 <div className='project-container'>
                     <div className='project-description'>
-                    <h3>You've found my projects</h3>
+                        <h3>You've found my projects</h3>
                         <p>I've added a few of the projects I have done recently. Some of the projects you can play with on the page and others don't have much other than a description, mostly because they wouldn't work on their own.</p>
                         <p>For the best experience, I suggest using a computer.</p>
-                        <p>You can quickly navigate with the navigation buttons on the left side (for desktop) or on top (for mobile)</p>
+                        <p>You can quickly navigate with the navigation buttons on the left side (for desktop) or on top (for mobile).</p>
                     </div>
                 </div>
             </Element>
@@ -73,6 +73,7 @@ let Projects = () => {
                     </div>
                     <p>Created: 2019</p>
                     <p className='project-status'>Status: Hosted on company wiki for employee use</p>
+                    <p className='github-link'>Github Repository: Not pushed to Github</p>
                 </div>
                 <div className='project-container'>
                     <span onClick={(e) => {
@@ -88,7 +89,7 @@ let Projects = () => {
                         <br></br>
                         <p>The snippet of the project I included walks you through clearing a tamper alert on a sensor. Agents will select the appropriate sensor and follow the given steps.</p>
                     </div>
-                    <Iframe src="http://localhost:3000/projectFiles/troubleshootingWizard.html"
+                    <Iframe src="https://www.ricohancock.com/projectFiles/troubleshootingWizard.html"
                         width="100%"
                         height="100%"
                         id="myId"
@@ -112,6 +113,7 @@ let Projects = () => {
                         </div>
                         <p>Created: 2019-2020</p>
                         <p className='project-status'>Status: Not Hosted</p>
+                        <p className='github-link'>Github Repository: <a href='https://github.com/Bat-Cave/nutrification' target='_blank' rel='noreferrer'>Nutrification</a></p>
                     </div>
                     <div className='project-container'>
                         <span onClick={(e) => {
@@ -124,7 +126,7 @@ let Projects = () => {
                             <p>Nutrification was my final project for graduation at DevMountain. DevMountain was a 13-week coding bootcamp where we learned React, Node, PostgreSQL, and more. I was in a cohort of about 25 other students. At the end of our time at DevMountain we presented our final projects and then our instructors would award projects that were the most technical, had the best UI, best overall, and more. My project won best overall in my cohort.</p>
                             <p>Nutrification was a program that would take your weight, height, activity level, age, and gender to calculate your recommended daily intake for calories, protein, carbs, fat, and water. Unfortunately, Nutrification is no longer hosted.</p>
                         </div>
-                        <Iframe src="http://localhost:3000/projectFiles/nutrificationLogo.html"
+                        <Iframe src="https://www.ricohancock.com/projectFiles/nutrificationLogo.html"
                             width="100%"
                             height="100%"
                             id="myId"
@@ -157,7 +159,7 @@ let Projects = () => {
                         <p>While at Omadi, I noticed there were some tasks that were repettative and time consuming, like restoring thousands of tow records, enabling/disabling features, and more. I decided to make a browser extension to handle some of those tasks. My extension cut down tasks that would take a couple weeks to about an hour.</p>
                         <p>There isn't much that you can see OAE do without the right circumstances, but you can see how the UI looked. It followed a similar style to other elements on Omadi's website. Hovering over the tool would reveal menu options you would select to perform certain functions.</p>
                     </div>
-                    <Iframe src="http://localhost:3000/projectFiles/popup.html"
+                    <Iframe src="https://www.ricohancock.com/projectFiles/popup.html"
                         width="100%"
                         height="100%"
                         id="myId"
@@ -226,9 +228,9 @@ let Projects = () => {
                         <h3>Recipe Request System</h3>
                         <p>After being laid off from Omadi, I took up some projects with my step-dad's company Crandall Corporate Dieticians. They are "the nation's largest provider of nutritional consulting and menu services to senior living communities and hospitals." (<a style={{
                         height: "auto"}} href='https://consultingrd.com/about/' target='_blank' rel='noreferrer'>read more</a>)</p>
-                        <p>This project allows communites and hospitals to easily request a new recipe to be added to their menu. The majority of the project is written in PHP, which I had to no experience with prior to this project. I picked up the language as fast as I could and was able to deliver the project.</p>
+                        <p>This project allows communities and hospitals to easily request a new recipe to be added to their menu. The majority of the project is written in PHP, which I had no experience with prior to this project. I picked up the language as fast as I could and was able to deliver the project.</p>
                     </div>
-                    <Iframe src="http://localhost:3000/projectFiles/recipeRequestLogo.html"
+                    <Iframe src="https://www.ricohancock.com/projectFiles/recipeRequestLogo.html"
                         width="100%"
                         height="100%"
                         id="myId"

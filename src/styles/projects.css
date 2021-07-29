@@ -26,6 +26,13 @@
     margin: 32px 0;
     text-align: left;
 }
+.github-link a{
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    margin: 0;
+    text-align: left;
+}
 
 .project-container{
     width: 100%;
@@ -76,6 +83,7 @@
     font-family: monospace;
     text-align: justify;
     font-size: 20px;
+    margin-bottom: 16px;
 }
 .project-description span{
     padding: 4px 8px;
@@ -246,6 +254,10 @@
 @media only screen and (max-width: 500px) {
     .project{
         padding: 0 4px;
+    }
+    .project-description{
+        justify-content: flex-start;
+        padding-bottom: 150px;
     }
     .scroll-to-container{
         position: fixed;
