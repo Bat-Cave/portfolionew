@@ -146,6 +146,7 @@ let Projects = () => {
                     </div>
                     <p>Created: 2020</p>
                     <p className='project-status'>Status: Not Hosted</p>
+                    <p className='github-link'>Github Repository: <a href='https://github.com/Bat-Cave/Omadi-Agent-Extension' target='_blank' rel='noreferrer'>OAE</a></p>
                 </div>
                 <div className='project-container'>
                     <span onClick={(e) => {
@@ -182,6 +183,7 @@ let Projects = () => {
                     </div>
                     <p>Created: 2021</p>
                     <p className='project-status'>Status: Hosted @&nbsp;<a href='https://www.ezworkpc.com/home' target='_blank' rel='noreferrer'>ezworkpc.com</a></p>
+                    <p className='github-link'>Github Repository: <a href='https://github.com/Bat-Cave/ezworkpc' target='_blank' rel='noreferrer'>ezworkpc</a></p>
                 </div>
                 <div className='project-container'>
                     <span onClick={(e) => {
@@ -217,6 +219,7 @@ let Projects = () => {
                     </div>
                     <p>Created: 2021</p>
                     <p className='project-status'>Status: Hosted on company site for employee use</p>
+                    <p className='github-link'>Github Repository: Not pushed to Github.</p>
                 </div>
                 <div className='project-container'>
                     <span onClick={(e) => {
@@ -252,7 +255,8 @@ let Projects = () => {
                         <span data-node>Node</span>
                     </div>
                     <p>Created: 2021</p>
-                    <p className='project-status'>Status: Hosted on company site for employee use</p>
+                    <p className='project-status'>Status: Hosted @ &nbsp; <a href='https://www.monkeydrumma.com/' target='_blank' rel='noreferrer'>monkeydrumma.com</a></p>
+                    <p className='github-link'>Github Repository: <a href='https://github.com/Bat-Cave/twitchbot' target='_blank' rel='noreferrer'>Twitch Bot</a><a href='https://github.com/Bat-Cave/monkeydrumma' target='_blank' rel='noreferrer'>monkeydrumma.com</a></p>
                 </div>
                 <div className='project-container'>
                     <span onClick={(e) => {

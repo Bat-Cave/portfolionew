@@ -21,16 +21,16 @@
 }
 .project-status a{
     width: auto;
-    height: 50px;
+    height: auto;
     border-radius: 25px;
-    margin: 32px 0;
+    margin: 0;
     text-align: left;
 }
 .github-link a{
     width: auto;
     height: auto;
     border-radius: 25px;
-    margin: 0;
+    margin: 0 8px;
     text-align: left;
 }
 
