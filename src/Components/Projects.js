@@ -182,7 +182,7 @@ let Projects = () => {
                         <span data-emailjs>EmailJS</span>
                     </div>
                     <p>Created: 2021</p>
-                    <p className='project-status'>Status: Hosted @&nbsp;<a href='https://www.ezworkpc.com/home' target='_blank' rel='noreferrer'>ezworkpc.com</a></p>
+                    <p className='project-status'>Status: Hosted with <a href='https://www.netlify.com/' target='_blank' rel='noreferrer'>Netlify</a>@<a href='https://www.ezworkpc.com/home' target='_blank' rel='noreferrer'>ezworkpc.com</a></p>
                     <p className='github-link'>Github Repository: <a href='https://github.com/Bat-Cave/ezworkpc' target='_blank' rel='noreferrer'>ezworkpc</a></p>
                 </div>
                 <div className='project-container'>
@@ -255,7 +255,7 @@ let Projects = () => {
                         <span data-node>Node</span>
                     </div>
                     <p>Created: 2021</p>
-                    <p className='project-status'>Status: Hosted @ &nbsp; <a href='https://www.monkeydrumma.com/' target='_blank' rel='noreferrer'>monkeydrumma.com</a></p>
+                    <p className='project-status'>Status: Hosted with <a href='https://www.netlify.com/' target='_blank' rel='noreferrer'>Netlify</a>@<a href='https://www.monkeydrumma.com/' target='_blank' rel='noreferrer'>monkeydrumma.com</a></p>
                     <p className='github-link'>Github Repository: <a href='https://github.com/Bat-Cave/twitchbot' target='_blank' rel='noreferrer'>Twitch Bot</a><a href='https://github.com/Bat-Cave/monkeydrumma' target='_blank' rel='noreferrer'>monkeydrumma.com</a></p>
                 </div>
                 <div className='project-container'>
