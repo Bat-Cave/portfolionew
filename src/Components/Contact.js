@@ -52,6 +52,7 @@ let Contact = () => {
                 </div>
             ) : (
                 <form className="contact-form" onSubmit={sendEmail}>
+                    <h2>Feel free to shoot me an email and I'll get back to you as soon as I can. Ask me for my resume, tell me a joke, or ask me a question.</h2>
                     <input placeholder='Name' name="contact_name"></input>
                     <input placeholder='Email' name="contact_email"></input>
                     <textarea placeholder='Type me a message...' name="contact_message"></textarea>

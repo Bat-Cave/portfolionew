@@ -49,6 +49,7 @@
     background: white;
     color: black;
     cursor: pointer;
+    box-shadow: 0 0 5px black;
 }
 
 .project-description{
@@ -252,12 +253,21 @@
     100%{opacity: 1;}
 }
 @media only screen and (max-width: 500px) {
+    .projects{
+        padding: 32px 0;
+    }
     .project{
         padding: 0 4px;
     }
     .project-description{
         justify-content: flex-start;
         padding-bottom: 150px;
+    }
+    .project-description h3{
+        font-size: 1.5rem;
+    }
+    .project-description p{
+        font-size: 1rem;
     }
     .scroll-to-container{
         position: fixed;
@@ -269,6 +279,8 @@
         justify-content: space-evenly;
         width: 100%;
         z-index: 1000;
+        background: rgb(30, 30, 30);
+        box-shadow: 0 1px 2px 1px black;
     }
     .scroll-to-container span{
         display: none;
