@@ -8,10 +8,19 @@
     flex-direction: column;
     color: white;
     box-shadow: inset 0 0 24px 1px black;
+    padding: 0 20%;
 }
 .about a{
     width: 150px;
     height: 50px;
     border-radius: 25px;
     margin: 32px 0;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.about *{
+    margin: 8px 0;
+    font-family: monospace;
+}
+.about h1{
+    font-family: 'ZCOOL KuaiLe', cursive;
 }

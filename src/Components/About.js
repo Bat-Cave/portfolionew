@@ -5,8 +5,12 @@ let About = () => {
 
     return (
         <div className='about'>
-            Coming Soon
             <Link to='/'>Back</Link>
+
+            <h1>Hey, I'm Rico.</h1>
+            <h2>I aspire to become the best web developer I can.</h2>
+
+            <p></p>
         </div>
     )
 }
